@@ -1,0 +1,45 @@
+.taskContainer {
+    margin: 50px 0;
+    display: flex;
+    height: 76vh;
+    position: relative;
+}
+
+.taskSettings {
+    display: block;
+    width: 18%;
+    margin-right: 2%;
+}
+
+.bottomBar{
+    position: absolute;
+    bottom: 0;
+}
+
+
+.taskBoard {
+    width: 80%;
+    padding: 3%;
+    background: #F4F4F4;
+    border-radius: 10px;
+}
+
+.button_today {
+    background-color: transparent;
+    border-style: none;
+    color: #6B7280;
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 100ms;
+    padding: 20px 10px;
+    width: 100%;
+    height: 10%;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.button_today:hover,
+.button_today:focus {
+    background: rgba(147, 51, 234, 0.06);
+    border-radius: 10px;
+}
