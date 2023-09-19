@@ -1,8 +1,18 @@
+'use client'
+
 import s from './home.module.css'
 import { Task } from './components/task/Task'
 import Image from 'next/image'
+import { useState } from 'react'
 
 export default function Home() {
+
+  const [tasks, setTasks] = useState([
+    { id: 1, isDone: false, name: 'learn 1', date: '19.09.2023' },
+    { id: 2, isDone: false, name: 'learn 2', date: '19.09.2023' },
+    { id: 3, isDone: false, name: 'learn 3', date: '19.09.2023' },
+  ])
+  
   return (
     <div className={s.taskContainer}>
 
@@ -33,10 +43,9 @@ export default function Home() {
       </div>
 
       <div className={s.taskBoard}>
-        <Task />
-        <Task />
-        <Task />
-        <Task />
+        {tasks.map((obj, index) => (
+          <Task key={index} isDone={obj.isDone} name={obj.name} date={obj.date} />
+        ))}
       </div>
     </div>
   )
