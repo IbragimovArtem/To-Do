@@ -7,7 +7,7 @@ const Header = () => (
         <Link href='/' className={s.logo}>To-Do</Link>
         <div className={s.userName} >UserName</div>
         <Link href='/pages/profile'>
-            <Image src='profileIcon.svg' alt='Profile Icon' width={30} height={30} />
+        <Image src='profileIcon.svg' alt='profile Icon' width={35} height={35} />
         </Link>
     </header>
 )
